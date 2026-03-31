@@ -39,17 +39,27 @@ export default function Home() {
 
       {/* HEADER */}
       <div className="max-w-5xl mx-auto mb-10 flex items-center justify-between">
+        
         <div className="flex items-center gap-3">
-          <Image 
-            src="/pheonix.png" 
-            alt="Phoenix Logo" 
-            width={32}
-            height={32}
-          />
+          
+          {/* 🔥 Phoenix Logo with Circle */}
+          <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500/30 to-purple-500/20 border border-blue-400/30 flex items-center justify-center shadow-lg backdrop-blur-sm">
+  
+  <Image 
+    src="/pheonix.png"
+    alt="Phoenix Logo"
+    width={40}
+    height={40}
+    className="rounded-full object-cover"
+  />
+
+</div>
+
           <h1 className="text-2xl font-bold tracking-wide">
             MOZEN
           </h1>
         </div>
+
         <span className="text-sm text-gray-400">
           AI Email Generator
         </span>
@@ -64,7 +74,7 @@ export default function Home() {
           </span>
         </h2>
         <p className="text-gray-400">
-          Paste a job description and your profile details. MOZEN is an AI-powered tool that generates personalized recruiter emails based on job descriptions and your profile.
+          Paste a job description and your profile details. MOZEN creates a personalized email tailored to the role, helping you connect with recruiters more effectively.
         </p>
       </div>
 
