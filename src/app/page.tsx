@@ -48,8 +48,8 @@ export default function Home() {
   <Image 
     src="/pheonix.png"
     alt="Phoenix Logo"
-    width={40}
-    height={40}
+    width={50}
+    height={50}
     className="rounded-full object-cover"
   />
 
