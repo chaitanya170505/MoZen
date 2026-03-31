@@ -51,7 +51,7 @@ export default function Home() {
           </h1>
         </div>
         <span className="text-sm text-gray-400">
-          AI Email Agent
+          AI Email Generator
         </span>
       </div>
 
