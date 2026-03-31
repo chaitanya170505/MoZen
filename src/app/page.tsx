@@ -64,7 +64,7 @@ export default function Home() {
           </span>
         </h2>
         <p className="text-gray-400">
-          Paste a job description and your profile details. MOZEN intelligently generates a tailored outreach email to help you connect with recruiters effectively.
+          Paste a job description and your profile details. MOZEN is an AI-powered tool that generates personalized recruiter emails based on job descriptions and your profile.
         </p>
       </div>
 
