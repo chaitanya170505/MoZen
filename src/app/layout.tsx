@@ -3,6 +3,9 @@ import "./globals.css";
 export const metadata = {
   title: "MOZEN",
   description: "AI Email Agent",
+  icons: {
+    icon: "icon.png",
+  },
 };
 
 export default function RootLayout({
