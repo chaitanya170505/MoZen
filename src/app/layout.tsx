@@ -11,6 +11,9 @@ export const metadata = {
     description: "Awesome app",
     images: ["/og-image.png"],
   },
+  verification: {
+    google: "ZPz2KXRN42HD82H4ef6hG1rntGRbRz9zRgzqRMeyt4g",
+  },
 };
 
 export default function RootLayout({
