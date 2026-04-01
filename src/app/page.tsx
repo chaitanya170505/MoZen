@@ -4,10 +4,10 @@ import { useState } from "react";
 import Image from "next/image";
 
 export default function Home() {
-  const [jd, setJd] = useState("");
-  const [details, setDetails] = useState("");
-  const [email, setEmail] = useState("");
-  const [loading, setLoading] = useState(false);
+const [jd, setJd] = useState<string>("");
+const [details, setDetails] = useState<string>("");
+const [email, setEmail] = useState<string>("");
+const [loading, setLoading] = useState<boolean>(false);
 
   const generateEmail = async () => {
     if (!jd || !details) {

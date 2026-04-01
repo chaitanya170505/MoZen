@@ -1,5 +1,18 @@
 import OpenAI from "openai";
 
+interface GenerateRequest {
+  jd: string;
+  details: string;
+}
+
+interface GenerateResponse {
+  email: string;
+}
+
+interface ErrorResponse {
+  error: string;
+}
+
 const client = new OpenAI({
   apiKey: process.env.GROQ_API_KEY,
   baseURL: "https://api.groq.com/openai/v1",
@@ -7,7 +20,8 @@ const client = new OpenAI({
 
 export async function POST(req: Request) {
   try {
-    const { jd, details } = await req.json();
+    const body: GenerateRequest = await req.json();
+const { jd, details } = body;
 
     if (!jd || !details) {
       return Response.json(
