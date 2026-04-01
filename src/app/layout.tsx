@@ -6,6 +6,11 @@ export const metadata = {
   icons: {
     icon: "icon.png",
   },
+  openGraph: {
+    title: "Mozen",
+    description: "Awesome app",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function RootLayout({
