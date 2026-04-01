@@ -1,4 +1,5 @@
 import "./globals.css";
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 export const metadata = {
   title: "MOZEN",
@@ -24,6 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>{children}</body>
+      <GoogleAnalytics gaId="G-JBHJ48EPGZ" />
     </html>
   );
 }
